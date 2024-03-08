@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <title>Contatos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tabela de Contatos</h1>
+        </header>
+        <main>
+            <form id="form-contatos">
+                <input type="text" id="nome-contatos" placeholder="Nome" required pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
+                <input type="tel" id="tel-contatos" placeholder="Telefone" required min="10" max="11">
+                <button type="submit">Registrar</button>
+            </form>
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <footer>
+        <h3>&copy; 2024 - Todos os direitos reservados</h3>
+        <p>Desenvolvido por Lucas Sens</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
